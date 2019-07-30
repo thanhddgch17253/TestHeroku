@@ -1,16 +1,19 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
+$servername = "db4free.net";
+$username = "root300599";
+$password = "hihihihi";
 $port  ="3306";
-$dbname = "gwcourse";
+$dbname = "gwcourses1999";
 
 // Create connection
-$conn = new mysqli($servername .":".$port, $username, $password, $dbname);
+$conn = new mysqli($servername .":" .$port, $username, $password, $dbname);
 // Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+if (!$conn) {
+    echo "fail";
 } 
-echo"done!";
+else {
+    echo"done!";
+}
+
 
 ?>
